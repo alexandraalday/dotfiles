@@ -23,7 +23,7 @@ BLUE='\[\e[0;34m\]'
 LAVENDER='\[\e[1;34m\]'
 NC='\[\e[0m\]' # No Color
 
-export PS1=" 👽 🔫  | ${DARKGRAY} \t ${MAGENTA} \w ${LAVENDER} @ \h ${BLUE}(\u) \n ${NC}| => "
+export PS1=" 👽 🔫  | ${DARKGRAY} \t ${MAGENTA} \w @ \h (\u) \n ${NC}| => "
 export PS2=" ${NC}| => "
 
 # aliases
