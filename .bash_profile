@@ -10,28 +10,21 @@ export GIT_PS1_SHOWCOLORHINTS=true
 
 # pretty prompt
 # I use base-16 for my terminal colors http://chriskempson.com/projects/base16/
-
 export TERM=xterm-color
 export CLICOLOR=1
 export GREP_OPTIONS='--color=auto'
-export LSCOLORS=GxFxCxDxBxegedabagaceds
+export LSCOLORS=gxfxcxdxbxegedabagaceds
 
 # Define some colors first:
-RED='\[\e[1;31m\]'
-BOLDYELLOW='\[\e[1;33m\]'
-GREEN='\[\e[0;32m\]'
-LAVENDER='\[\e[1;34m\]'
-DARKBROWN='\[\e[1;33m\]'
-DARKGRAY='\[\e[1;30m\]'
-CUSTOMCOLORMIX='\[\e[1;30m\]'
-DARKCUSTOMCOLORMIX='\[\e[1;32m\]'
+DARKGRAY='\[\e[0;30m\]'
 LIGHTBLUE="\[\033[1;36m\]"
-PURPLE='\[\e[1;35m\]' 
+MAGENTA='\[\e[0;35m\]'
+BLUE='\[\e[0;34m\]'
+LAVENDER='\[\e[1;34m\]'
 NC='\[\e[0m\]' # No Color
 
-# export PS1="${LIGHTBLUE}\\u ${BOLDYELLOW}[\\W] ${PURPLE}\$(parse_git_branch)${DARKCUSTOMCOLORMIX}$ ${NC}"
-export PS1=" 👽 🔫  | ${LAVENDER}\\w @ \h (\u) \n| => "
-export PS2="| => "
+export PS1=" 👽 🔫  | ${DARKGRAY} \t ${MAGENTA} \w ${LAVENDER} @ \h ${BLUE}(\u) \n ${NC}| => "
+export PS2=" ${NC}| => "
 
 # aliases
 # weather and the moon
